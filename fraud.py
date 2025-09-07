@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report
 
 def main():
     # Load dataset (replace with your filename)
-    df = pd.read_csv('creditcard.csv')
+    df = pd.read_csv('compressed_data.csv')
     # Group by the target column 'Class' and count samples in each group
     class_counts = df.groupby('Class').size()
     print(class_counts)
